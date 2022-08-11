@@ -1,0 +1,30 @@
+<section>
+<div>
+<h3>Transactions</h3>
+    <div>
+      <h2>
+        <%= @category.name %>
+      </h2>
+      <div>
+      <p class='font-bold'> Total Amount: $
+      
+      </p>
+      <%= button_to "Delete", @category, method: :delete %>
+    </div>
+    </div>
+    <% if @transactions.exists? %>
+      <div>
+        <% @transactions.each do |transaction| %>
+        <div> 
+            <%= render transaction %>
+          </div>
+        <% end %>
+      </div>
+    <% else %>  
+      
+    <% end %>
+</div>
+<div>
+<%= link_to "Add Transaction", new_category_transaction_path(@category) %>
+</div>
+</section>

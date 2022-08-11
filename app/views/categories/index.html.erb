@@ -1,0 +1,21 @@
+<h1>Categories#index</h1>
+<p>Find me in app/views/categories/index.html.erb</p>
+<section>  
+    <% if @categories.exists? %>
+      <div>
+      <h1>Categories</h1>
+        <% @categories.each do |category| %>
+          <div'>
+            <%= render category %>
+            <%= button_to "Delete", category_path(category), method: :delete %>
+          </div>
+        <% end %> 
+      </div>
+    <% else %> 
+      <p></p>
+       
+    <% end %> 
+    <div>
+      <%= link_to "Add Category", new_category_path %>
+    </div>
+</section>
