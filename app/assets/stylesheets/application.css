@@ -15,6 +15,9 @@
  */
 
  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@1,900&family=Shrikhand&display=swap');
+
 
  * {
     margin: 0;
@@ -26,6 +29,45 @@
     background-color: rgb(245, 245, 245);
     font-family: 'Raleway', sans-serif;
     color: rgb(243, 243, 243);
+ }
+
+ .home_log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #22268f;
+ }
+
+ .home_log h1 {
+    font-family: 'Shrikhand', cursive;
+ }
+
+ .log_links {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .link_log_in {
+    color: #22268f;
+    text-decoration: none;
+    margin-top: 30px;
+    background-color: #84fd9d;
+    padding: 10px 30px;
+    border-radius: 20px;
+ }
+
+ .link_sign_up {
+    text-decoration: none;
+    margin-top: 20px;
+    background-color: #9c62ca;
+    padding: 10px 30px;
+    border-radius: 20px;
  }
 
  a {
@@ -45,11 +87,19 @@
     text-decoration: none;
  }
 
+ .back {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 4px 10px;
+    background-color: #9c62ca;
+ }
+
  main {
     max-width: 414px;
     padding-top: 6rem;
     margin: 0 auto;
-    background-color: rgb(56, 25, 143);
+    background-color: #22268f;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -65,21 +115,22 @@
 
  .home h1 {
     padding: 20px;
-    color: rgb(56, 25, 143);
+    font-family: 'Shrikhand', cursive;
+    color: #22268f;
  }
 
  .home_content {
     border-top-right-radius: 60px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(56, 25, 143);
-    padding: 20px;
+    background-color: #22268f;
+    padding: 50px 20px;
  }
 
  .home_content a {
     text-align: center;
     margin-top: 10px;
-    color: rgb(56, 25, 143);
+    color: #22268f;
     background-color: #fff;
     border-radius: 20px;
     padding: 10px 30px;
@@ -100,7 +151,7 @@
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding: 40px 20px;
-    background-color: rgba(255, 255, 255, 0.356);
+    background-color: rgba(255, 255, 255, 0.205);
     min-height: 80vh;
  }
 
@@ -114,7 +165,7 @@
  }
 
  .add_category a {
-    color: rgb(56, 25, 143);
+    color: #22268f;
     width: 100%;
     padding: 20px  140px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
@@ -125,7 +176,7 @@
  .category {
     margin-top: 15px;
     background-color: #fff;
-    color: rgb(84, 24, 139);
+    color: #22268f;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -144,7 +195,7 @@
  }
 
  .category h3 {
-    color: rgb(84, 24, 139);
+    color: #22268f;
  }
 
  .category_body {
@@ -180,12 +231,7 @@
     margin: 0 auto;
  }
 
- .transactions {
-    width: 80%;
-    margin: 0 auto;
- }
-
- .log_in {
+ .new_trans {
     background-color: rgba(255, 255, 255, 0.322);
     display: flex;
     justify-content: center;
@@ -198,6 +244,42 @@
     margin: 0 auto;
  }
 
+ .transactions {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    min-height: 70vh;
+    width: 80%;
+    margin: 0 auto;
+    color: #22268f;
+    padding: 40px 40px;
+    background-color: rgb(255, 255, 255);
+ }
+
+ .transactions a {
+    background-color: #fff;
+    color: #22268f;
+    padding: 10px 20px;
+ }
+
+ .trans_title {
+    text-align: center;
+    margin: 20px;
+ }
+
+ .log_in {
+    background-color: rgba(255, 255, 255, 0.212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 50px 20px;
+    margin: 0 auto;
+ }
+
+ .new_trans form,
  .sign_up form,
  .new_cat form,
  .log_in form {
@@ -207,6 +289,7 @@
     flex-direction: column;
  }
 
+ .new_trans input,
  .sign_up input,
  .new_cat input,
  .log_in input {

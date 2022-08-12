@@ -1,16 +1,16 @@
 <%= form_with(model: transaction, url: category_transactions_path(@category)) do |form| %>
     <div>
-      <%= form.label :category_id %>
+      <%= form.label :category_id %><br />
       <%= form.collection_select :category_id, current_user.categories, :id, :name, prompt: true %>
     </div>
   
     <div>
-      <%= form.label :name %>
+      <%= form.label :name %><br />
       <%= form.text_field :name %>
     </div>
   
-    <div class='flex flex-col'>
-      <%= form.label :amount %>
+    <div>
+      <%= form.label :amount %><br />
       <%= form.number_field :amount %>
     </div>
   

@@ -1,5 +1,6 @@
-<section>
-<h3>Transactions</h3>
+<h1 class="trans_title">Transactions</h1>
+<section class="transactions">
+<%= link_to "Add Transaction", new_category_transaction_path(@category) %>
     <div>
       <h2>
         <%= @category.name %>
@@ -18,9 +19,8 @@
         <% end %>
       </div>
     <% else %>  
-      
+    
     <% end %>
 </div>
 <div>
-<%= link_to "Add Transaction", new_category_transaction_path(@category) %>
 </section>
