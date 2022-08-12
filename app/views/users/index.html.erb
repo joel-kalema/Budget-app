@@ -1,3 +1,7 @@
-<h1>Hello <%= @user.name %></h1>
-<%= link_to "Log out", destroy_user_session_path, data: { "turbo-method": :delete } %>
-<%= link_to "Start", categories_path %>
+<section class="home">
+    <h1>My Badget</h1>
+    <div class="home_content">
+        <p>My Budget helps you manage your money more effectively through easy recording of your income and expenses.</p>
+        <%= link_to "Start", categories_path %>
+    </div>
+</section>

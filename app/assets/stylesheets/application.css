@@ -41,14 +41,54 @@
     padding: 20px;
  }
 
+ .nav a{
+    text-decoration: none;
+ }
+
  main {
     max-width: 414px;
+    padding-top: 6rem;
     margin: 0 auto;
     background-color: rgb(56, 25, 143);
     height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
+ }
+
+ .home {
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.514) 0 0 20px;
+ }
+
+ .home h1 {
+    padding: 20px;
+    color: rgb(56, 25, 143);
+ }
+
+ .home_content {
+    border-top-right-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(56, 25, 143);
+    padding: 20px;
+ }
+
+ .home_content a {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(56, 25, 143);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+ }
+
+ .home_content p {
+    padding: 10px 0;
+    font-size: 13px;
  }
 
  .title {
@@ -61,7 +101,7 @@
     border-top-right-radius: 40px;
     padding: 40px 20px;
     background-color: rgba(255, 255, 255, 0.356);
-    min-height: 90vh;
+    min-height: 80vh;
  }
 
  .add_category {
@@ -70,14 +110,13 @@
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 100%;
     padding: 10px;
  }
 
  .add_category a {
     color: rgb(56, 25, 143);
     width: 100%;
-    padding: 20px;
+    padding: 20px  140px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
     border-radius: 30px;
     background-color: #fff;
@@ -90,7 +129,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -126,4 +165,67 @@
  .category a {
     color: #fff;
     text-decoration: none;
+ }
+
+ .new_cat {
+    background-color: rgba(255, 255, 255, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 50px 20px;
+    margin: 0 auto;
+ }
+
+ .transactions {
+    width: 80%;
+    margin: 0 auto;
+ }
+
+ .log_in {
+    background-color: rgba(255, 255, 255, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 50px 20px;
+    margin: 0 auto;
+ }
+
+ .sign_up form,
+ .new_cat form,
+ .log_in form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .sign_up input,
+ .new_cat input,
+ .log_in input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+ }
+
+ .sign_up {
+    background-color: rgba(255, 255, 255, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 50px 20px;
+    margin: 0 auto;
  }
