@@ -18,7 +18,7 @@
 - Ruby on Rails.
 - PostgreSQL.
 
-## ![10-best-budgeting-apps-for-students-8](https://user-images.githubusercontent.com/57408419/183483747-1596787d-fe01-4322-8aa2-03ea5383781f.png)
+![badgetApp](https://user-images.githubusercontent.com/57408419/184454848-f5fa90bc-58ab-46ae-8e5a-29fed6fa8572.png)
 
 ## Getting Started
 
