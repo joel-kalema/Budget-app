@@ -34,8 +34,11 @@
 
  .nav {
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     top: 0;
     width: 100%;
+    padding: 20px;
  }
 
  main {
