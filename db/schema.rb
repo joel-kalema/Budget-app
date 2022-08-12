@@ -24,7 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_09_142053) do
   end
 
   create_table "transactions", force: :cascade do |t|
-    t.string "amount"
+    t.decimal "amount"
     t.string "name"
     t.bigint "user_id"
     t.bigint "category_id"

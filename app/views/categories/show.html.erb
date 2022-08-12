@@ -6,7 +6,7 @@
         <%= @category.name %>
       </h2>
       <div>
-      <p> Total Amount: $</p>
+      <p> Total Amount:<%=@category.transactions.sum(:amount) %> $</p>
       <%= button_to "Delete", @category, method: :delete %>
     </div>
     </div>
@@ -19,7 +19,6 @@
         <% end %>
       </div>
     <% else %>  
-    
     <% end %>
 </div>
 <div>
