@@ -1,0 +1,20 @@
+<%= form_with(model: transaction, url: category_transactions_path(@category)) do |form| %>
+    <div>
+      <%= form.label :category_id %>
+      <%= form.collection_select :category_id, current_user.categories, :id, :name, prompt: true %>
+    </div>
+  
+    <div>
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+  
+    <div class='flex flex-col'>
+      <%= form.label :amount %>
+      <%= form.number_field :amount %>
+    </div>
+  
+    <div class='self-center'>
+      <%= form.submit :Save %>
+    </div>
+  <% end %>
