@@ -6,7 +6,6 @@
         <% @categories.each do |category| %>
           <div class="category">
             <%= render category %>
-            <%= button_to "Delete", category_path(category), method: :delete %>
           </div>
         <% end %> 
         </div>

@@ -2,9 +2,8 @@
 <section class="transactions">
 <%= link_to "Add Transaction", new_category_transaction_path(@category) %>
     <div>
-      <h2>
-        <%= @category.name %>
-      </h2>
+      <img src="<%= @category.icon %>" alt='Category icon' />
+      <h2><%= @category.name %></h2>
       <div>
       <p> Total Amount:<%=@category.transactions.sum(:amount) %> $</p>
       <%= button_to "Delete", @category, method: :delete %>

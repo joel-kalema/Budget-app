@@ -165,12 +165,13 @@
  }
 
  .add_category a {
+   text-decoration: none;
     color: #22268f;
     width: 100%;
     padding: 20px  140px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
     border-radius: 30px;
-    background-color: #fff;
+    background-color: #84fd9d;
  }
  
  .category {
@@ -181,9 +182,6 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
  }
 
  .category button {
@@ -199,13 +197,26 @@
  }
 
  .category_body {
+   width: 100%;
     display: flex;
     justify-content: space-between;
  }
 
- .category_body h3 {
-    margin-left: 50px;
+ .flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 80%;
  }
+
+ .category_body p {
+   color: black;
+   margin-top: 15px;
+}
+
+.amount {
+   font-size: 25px;
+}
 
  .category img {
     width: 55px;
@@ -245,20 +256,30 @@
  }
 
  .transactions {
+   position: relative;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     min-height: 70vh;
     width: 80%;
-    margin: 0 auto;
+    margin: 30px auto;
     color: #22268f;
     padding: 40px 40px;
     background-color: rgb(255, 255, 255);
  }
 
  .transactions a {
-    background-color: #fff;
-    color: #22268f;
+   text-decoration: none;
+   background-color: crimson;
+   border-radius: 20px;
+   top: -20px;
+   left: 90px;
+    position: absolute;
+    color: #fff;
     padding: 10px 20px;
+ }
+
+ .transactions img {
+   width: 50px;
  }
 
  .trans_title {
