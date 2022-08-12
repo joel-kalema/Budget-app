@@ -107,7 +107,7 @@
  }
 
  .home {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     width: 80%;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.514) 0 0 20px;
@@ -131,7 +131,7 @@
     text-align: center;
     margin-top: 10px;
     color: #22268f;
-    background-color: #fff;
+    background-color: rgb(178, 209, 0);
     border-radius: 20px;
     padding: 10px 30px;
     text-decoration: none;
@@ -168,16 +168,15 @@
    text-decoration: none;
     color: #22268f;
     width: 100%;
-    padding: 20px  140px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
+    padding: 20px  145px;
     border-radius: 30px;
-    background-color: #84fd9d;
+    background-color: rgb(178, 209, 0);
  }
  
  .category {
     margin-top: 15px;
-    background-color: #fff;
-    color: #22268f;
+    background-color: rgba(255, 255, 255, 0.301);
+    color: #fff;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -193,7 +192,7 @@
  }
 
  .category h3 {
-    color: #22268f;
+    color: #dddddd;
  }
 
  .category_body {
@@ -207,6 +206,7 @@
    justify-content: space-between;
    align-items: center;
    width: 80%;
+   color: #fff;
  }
 
  .category_body p {
@@ -259,27 +259,57 @@
    position: relative;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    min-height: 70vh;
+    min-height: 65vh;
     width: 80%;
     margin: 30px auto;
-    color: #22268f;
+    color: #fff;
     padding: 40px 40px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.24);
+ }
+
+ .transction_flex {
+   margin-bottom: 30px;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .transction_flex h2 {
+   font-size: 17px;
+   margin-bottom: 10px;
+ }
+
+ .transction_flex button {
+   border: none;
+   background-color: crimson;
+   padding: 5px 7px;
+   border-radius: 10px;
+   margin-top: 10px;
+   margin-left: 120px;
+   color: #fff;
  }
 
  .transactions a {
    text-decoration: none;
-   background-color: crimson;
+   background-color: rgb(207, 243, 0);
    border-radius: 20px;
    top: -20px;
    left: 90px;
-    position: absolute;
-    color: #fff;
-    padding: 10px 20px;
+   position: absolute;
+   color: #22268f;
+   padding: 10px 20px;
  }
 
  .transactions img {
-   width: 50px;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+ }
+
+ .transaction_body {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 5px;
+   border-top: 1px rgba(0, 0, 0, 0.555) solid;
  }
 
  .trans_title {
