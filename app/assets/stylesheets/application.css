@@ -14,7 +14,7 @@
  *= require_self
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,300;1,900&family=Shrikhand&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@1,900&family=Shrikhand&display=swap');
 
@@ -27,7 +27,7 @@
 
  body {
     background-color: rgb(245, 245, 245);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(243, 243, 243);
  }
 
@@ -112,7 +112,7 @@
 
  main {
     max-width: 414px;
-    padding-top: 6rem;
+    padding-top: 1rem;
     margin: 0 auto;
     background-color: #22268f;
     height: 100vh;
@@ -139,7 +139,7 @@
     display: flex;
     flex-direction: column;
     background-color: #22268f;
-    padding: 50px 20px;
+    padding: 40px 20px;
  }
 
  .home_content a {
@@ -158,16 +158,14 @@
  }
 
  .title {
-    margin-bottom: 30px;
+    margin-bottom:   50px;
     text-align: center;
  }
 
  .categories {
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    padding: 40px 20px;
+    padding: 20px 20px;
     background-color: rgba(255, 255, 255, 0.205);
-    min-height: 80vh;
+    min-height: 78vh;
  }
 
  .add_category {
@@ -175,6 +173,7 @@
     justify-content: center;
     text-align: center;
     position: fixed;
+    width: 100%;
     bottom: 0;
     padding: 10px;
  }
@@ -183,18 +182,14 @@
    text-decoration: none;
     color: #22268f;
     width: 100%;
-    padding: 20px  145px;
-    border-radius: 30px;
+    padding: 15px;
     background-color: rgb(178, 209, 0);
  }
  
  .category {
-    margin-top: 15px;
+    margin-top: 5px;
     background-color: rgba(255, 255, 255, 0.301);
     color: #fff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     padding: 10px 20px;
  }
 

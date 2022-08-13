@@ -9,9 +9,6 @@ class TransactionsController < ApplicationController
 
     if transaction.save
       redirect_to category_url(transaction.category), notice: 'Transaction was successfully created.'
-
-    else
-      redirect_to category_url(transaction.category), notice: 'Failed to create new transaction!'
     end
   end
 

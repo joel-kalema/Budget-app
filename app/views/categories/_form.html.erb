@@ -1,12 +1,12 @@
 <%= form_with(model: category) do |form| %>
     <div>
       <%= form.label :name %><br />
-      <%= form.text_field :name%>
+      <%= form.text_field :name, required: true%>
     </div>
   
     <div>
       <%= form.label :icon%><br />
-      <%= form.text_field :icon %>
+      <%= form.text_field :icon, required: true %>
     </div>
   
     <div>
