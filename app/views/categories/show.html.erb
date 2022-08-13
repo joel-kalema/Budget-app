@@ -1,0 +1,24 @@
+<h1 class="trans_title">Transactions</h1>
+<section class="transactions">
+<%= link_to "Add Transaction", new_category_transaction_path(@category) %>
+    <div class="transction_flex">
+      <img src="<%= @category.icon %>" alt='Category icon' />
+      <div>
+        <h2><%= @category.name %></h2>
+        <h4> Total Amount: <%=@category.transactions.sum(:amount) %> $</h4>
+        <%= button_to "Delete", @category, method: :delete %>
+      </div>
+    </div>
+    <% if @transactions.exists? %>
+      <div>
+        <% @transactions.each do |transaction| %>
+        <div> 
+            <%= render transaction %>
+          </div>
+        <% end %>
+      </div>
+    <% else %> 
+    <% end %>
+</div>
+<div>
+</section>

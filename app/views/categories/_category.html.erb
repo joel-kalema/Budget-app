@@ -1,0 +1,12 @@
+<%= link_to category do %>
+    <div id="<%= dom_id category %>" class = "category_body">
+      <img src="<%= category.icon %>" alt='Category icon' />
+      <div class='flex'>
+          <div>
+            <h3><%= category.name %></h3>
+            <p><%= category.created_at.strftime("%d-%b-%Y")%></p>
+          </div>
+          <h3 class="amount"><%= category.transactions.sum(:amount) %>$</h3>
+      </div>
+    </div>
+<% end %>
