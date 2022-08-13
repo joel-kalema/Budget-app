@@ -21,4 +21,4 @@ production:
   <<: *default
   database: Budget_production
   username: Budget
-  password: <%= ENV["BLOG_DATABASE_PASSWORD"] %>
+  password: joel
