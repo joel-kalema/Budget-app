@@ -1,0 +1,365 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@1,900&family=Shrikhand&display=swap');
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    background-color: rgb(245, 245, 245);
+    font-family: 'Raleway', sans-serif;
+    color: rgb(243, 243, 243);
+ }
+
+ .home_log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #22268f;
+ }
+
+ .home_log h1 {
+    font-family: 'Shrikhand', cursive;
+ }
+
+ .log_links {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .link_log_in {
+    color: #22268f;
+    text-decoration: none;
+    margin-top: 30px;
+    background-color: #84fd9d;
+    padding: 10px 30px;
+    border-radius: 20px;
+ }
+
+ .link_sign_up {
+    text-decoration: none;
+    margin-top: 20px;
+    background-color: #9c62ca;
+    padding: 10px 30px;
+    border-radius: 20px;
+ }
+
+ a {
+    color: #fff;
+ }
+
+ .nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+ }
+
+ .nav a{
+    text-decoration: none;
+ }
+
+ .back {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 4px 10px;
+    background-color: #9c62ca;
+ }
+
+ main {
+    max-width: 414px;
+    padding-top: 6rem;
+    margin: 0 auto;
+    background-color: #22268f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .home {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.514) 0 0 20px;
+ }
+
+ .home h1 {
+    padding: 20px;
+    font-family: 'Shrikhand', cursive;
+    color: #22268f;
+ }
+
+ .home_content {
+    border-top-right-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: #22268f;
+    padding: 50px 20px;
+ }
+
+ .home_content a {
+    text-align: center;
+    margin-top: 10px;
+    color: #22268f;
+    background-color: rgb(178, 209, 0);
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+ }
+
+ .home_content p {
+    padding: 10px 0;
+    font-size: 13px;
+ }
+
+ .title {
+    margin-bottom: 30px;
+    text-align: center;
+ }
+
+ .categories {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.205);
+    min-height: 80vh;
+ }
+
+ .add_category {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+ }
+
+ .add_category a {
+   text-decoration: none;
+    color: #22268f;
+    width: 100%;
+    padding: 20px  145px;
+    border-radius: 30px;
+    background-color: rgb(178, 209, 0);
+ }
+ 
+ .category {
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.301);
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 20px;
+ }
+
+ .category button {
+    border: none;
+    color: #fff;
+    background-color: crimson;
+    border-radius: 10px;
+    padding: 5px 10px;
+ }
+
+ .category h3 {
+    color: #dddddd;
+ }
+
+ .category_body {
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 80%;
+   color: #fff;
+ }
+
+ .category_body p {
+   color: black;
+   margin-top: 15px;
+}
+
+.amount {
+   font-size: 25px;
+}
+
+ .category img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+ }
+
+ .category a {
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .new_cat {
+    background-color: rgba(255, 255, 255, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 50px 20px;
+    margin: 0 auto;
+ }
+
+ .new_trans {
+    background-color: rgba(255, 255, 255, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 50px 20px;
+    margin: 0 auto;
+ }
+
+ .transactions {
+   position: relative;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    min-height: 65vh;
+    width: 80%;
+    margin: 30px auto;
+    color: #fff;
+    padding: 40px 40px;
+    background-color: rgba(255, 255, 255, 0.24);
+ }
+
+ .transction_flex {
+   margin-bottom: 30px;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .transction_flex h2 {
+   font-size: 17px;
+   margin-bottom: 10px;
+ }
+
+ .transction_flex button {
+   border: none;
+   background-color: crimson;
+   padding: 5px 7px;
+   border-radius: 10px;
+   margin-top: 10px;
+   margin-left: 120px;
+   color: #fff;
+ }
+
+ .transactions a {
+   text-decoration: none;
+   background-color: rgb(207, 243, 0);
+   border-radius: 20px;
+   top: -20px;
+   left: 90px;
+   position: absolute;
+   color: #22268f;
+   padding: 10px 20px;
+ }
+
+ .transactions img {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+ }
+
+ .transaction_body {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 5px;
+   border-top: 1px rgba(0, 0, 0, 0.555) solid;
+ }
+
+ .trans_title {
+    text-align: center;
+    margin: 20px;
+ }
+
+ .log_in {
+    background-color: rgba(255, 255, 255, 0.212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 50px 20px;
+    margin: 0 auto;
+ }
+
+ .new_trans form,
+ .sign_up form,
+ .new_cat form,
+ .log_in form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .new_trans input,
+ .sign_up input,
+ .new_cat input,
+ .log_in input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+ }
+
+ .sign_up {
+    background-color: rgba(255, 255, 255, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 50px 20px;
+    margin: 0 auto;
+ }

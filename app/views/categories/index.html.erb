@@ -1,0 +1,18 @@
+<section>  
+    <% if @categories.exists? %>
+      <div>
+      <h1 class="title">Categories</h1>
+        <div class="categories">
+        <% @categories.each do |category| %>
+          <div class="category">
+            <%= render category %>
+          </div>
+        <% end %> 
+        </div>
+      </div>
+    <% else %>    
+    <% end %> 
+    <div class ="add_category">
+        <%= link_to "Add Category", new_category_path %>
+    </div>
+</section>
