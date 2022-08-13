@@ -7,7 +7,7 @@ class TransactionsController < ApplicationController
   def create
     transaction = Transaction.new(transaction_params)
 
-    if transaction.save
+    if transaction.save # rubocop:todo Style/GuardClause
       redirect_to category_url(transaction.category), notice: 'Transaction was successfully created.'
     end
   end
