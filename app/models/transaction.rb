@@ -8,5 +8,4 @@ class Transaction < ApplicationRecord
   def total_amount
     category.sum('amount')
   end
-  
 end
